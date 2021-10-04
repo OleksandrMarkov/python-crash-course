@@ -53,3 +53,63 @@ print()
 arr5 = [i**3 for i in range(1,11)]
 for a in arr5:
 	print(str(a) + " ", end = "")
+
+print()
+
+# 4.10
+# slices for arr 5
+tmp1 = arr5[:3]
+tmp2 = arr5[3:6]
+tmp3 = arr5[-3:]
+
+
+for a in tmp1:
+	print(str(a) + " ", end = "")
+
+print()
+
+for a in tmp2:
+	print(str(a) + " ", end = "")
+
+print()
+
+for a in tmp3:
+	print(str(a) + " ", end = "")		
+
+# 4.11
+friend_pizzas = pizza_lst[:]
+
+pizza_lst.append('new_p')
+friend_pizzas.append('new_p2')
+
+print('My favorite pizzas are:')
+print(pizza_lst)
+
+print()
+
+print("My friend's favorite pizzas are:")
+print(friend_pizzas)
+
+
+#4.12
+
+for f in friend_pizzas:
+	print(f)
+
+print()
+
+# 4.13
+
+foods = ('borshch', 'tea', 'coffee', 'cake', 'porridge')
+
+for f in foods:
+	print(f + ' |', end = "")	
+
+print()
+
+foods = ('borshch', 'good tea', 'coffee', 'tasty cake', 'porridge')
+
+for f in foods:
+	print(f + ' |', end = "")
+
+# 4.14, 4.15 -> pep8		
