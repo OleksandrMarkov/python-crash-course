@@ -145,4 +145,41 @@ if 'tomatoes' in favorite_fruits:
 # if lst : 
 #	...
 #	if lst is not empty
-				
+
+print()
+print('# 5.8, 5.9')
+
+lst = ['Jack', 'admin', 'Tom', 'Bobby', 'Helen']
+
+if lst:
+	for person in lst:
+		if person == 'admin':
+			print(f'Hello {person}, would you like to see a status report?')
+		else:
+			print(f'Hello {person}, thank you for logging in again')	
+else:
+	print('We need to find some users')
+
+print()
+print('# 5.10')
+
+# checking login uniqueness
+current_users = ['Nick', 'Jack', 'Andy', 'Alice', 'Kate']
+current_users_lower = [c.lower() for c in current_users]
+
+for c in current_users_lower:
+	print(c)	
+
+print()
+
+new_users = ['jack', 'Ann', 'KatE', 'Tony', 'Mike']
+
+for new_user in new_users:
+	if new_user.lower() in current_users_lower:
+		print(f'Nickname "{new_user}" is taken. You should  chose other nickname')
+	else:
+		print(f'Your nickname "{new_user}" is not taken')	
+
+# 5.11 is done
+
+# 5.12 calculator, website, game, recommendation system
