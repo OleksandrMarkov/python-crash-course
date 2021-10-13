@@ -142,4 +142,15 @@ favorite_places = {'Alice': ['Paris', 'London', 'Prague'], 'Mia': ['Kiev', 'Mosc
 for name, places in favorite_places.items():
 	print(f"\n{name}'s favorite places are: ")
 	for place in places:
-		print(f"\t{place}") 
+		print(f"\t{place}")
+
+print()
+print('#6.10')
+print()	
+
+favorite_numbers = {'Jack': [100, 2, 13], 'Alex': [1,4,9], 'Tom': [23], 'Alice': [2,0], 'Ann':[60,12]}
+
+for name, numbers in favorite_numbers.items():
+	print(f"\n{name}'s favorite numbers are: ")
+	for num in numbers:
+		print(f"\t{num}")
