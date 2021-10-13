@@ -100,4 +100,46 @@ for person in people:
 	else:
 		print(f'{person.title()}, please, take our poll!')	
 
+print()
+print('#6.7')
+print()
 
+friend1 = {'first_name' : 'Max', 'last_name' : 'Fischer', 'age': 30, 'city': 'Virginia'}
+friend2 = {'first_name' : 'Tom', 'last_name' : 'Thompson', 'age': 20, 'city': 'Oklahoma'}
+friend3 = {'first_name' : 'Jane', 'last_name' : 'Kennedy', 'age': 25, 'city': 'Arkansas'}
+
+people = [friend1, friend2, friend3]
+
+for p in people:
+	print(f"\nFirst name: {p['first_name']}")
+	print(f"Last name: {p['last_name']}")
+	print(f"Age: {p['age']}")
+	print(f"City: {p['city']}")
+
+print()
+print('#6.8')
+print()
+
+rat = {'owner': 'Jenny', 'age': 2, 'price': 200}
+cat = {'owner': 'Olivia', 'age': 12, 'price': 600}
+dog = {'owner': 'Emma', 'age': 1.5, 'price': 1200}
+
+animals = [rat, cat, dog]
+
+for a in animals:
+	print(f"\nOwner: {a['owner']}")
+	print(f"Age: {a['age']}")
+	print(f"Price: {a['price']}")
+
+print()
+print('#6.9')
+print()	
+
+
+favorite_places = {'Alice': ['Paris', 'London', 'Prague'], 'Mia': ['Kiev', 'Moscow', 'Rome'],
+'Peter': ['Kiev', 'Berlin', 'Athens'] }
+
+for name, places in favorite_places.items():
+	print(f"\n{name}'s favorite places are: ")
+	for place in places:
+		print(f"\t{place}") 
