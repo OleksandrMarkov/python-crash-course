@@ -154,3 +154,21 @@ for name, numbers in favorite_numbers.items():
 	print(f"\n{name}'s favorite numbers are: ")
 	for num in numbers:
 		print(f"\t{num}")
+
+print()
+print('#6.11')
+print()
+
+cities = {
+	'kiev': {'country': 'ukraine', 'population': 2.8, 'fact': 'nice'},
+	'riga': {'country': 'latvia', 'population': 0.6, 'fact': 'good'},
+	'paris': {'country': 'france', 'population': 2.1, 'fact': 'awesome'},
+}
+
+for cityName, cityInfo in cities.items():
+	print(f"\nCity: {cityName.title()}")
+	print(f"Country: {cityInfo['country'].title()}")
+	print(f"Population: {cityInfo['population']}")
+	print(f"Fact: {cityInfo['fact'].title()}")
+
+#6.12 pass	
