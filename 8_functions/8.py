@@ -218,3 +218,47 @@ send_messages2(lst[:])
 print("\nMessages: ")
 for msg in lst:
 	print(msg)
+
+def make_pizza(*toppings):
+	""" arbitrary number of arguments (must be in the end parameters list)"""
+	for t in toppings:
+		print(f"- {t}")
+
+make_pizza('t1')
+make_pizza('t2', 't3', 't4')
+print()
+
+# arbitrary key arguments
+def build_profile(first, last, **user_info):
+	user_info['first_name'] = first
+	user_info['last_name'] = last
+
+	return user_info
+
+user_profile = build_profile('albert', 'einstein',
+field = 'physics', location = 'princeton')
+
+print(user_profile)
+
+print("\n# 8.12")
+def make_sandwich(*ingredients):
+	print("\nMaking a sandwich with following ingredients: ")
+	for i in ingredients:
+		print(f"- {i}")
+
+make_sandwich('i1', 'i2')
+make_sandwich('i3', 'i4', 'i5')
+
+print("\n# 8.13")
+
+def build__my_profile(first, last, **my_info):
+	my_info['first_name'] = first.title()
+	my_info['last_name'] = last.title()
+	return my_info
+
+my_profile = build__my_profile('alex', 'markov', age = 22, iq = 122,
+favorite_book = 'bible'.title())
+
+print(my_profile)
+
+print("\n# 8.14")
