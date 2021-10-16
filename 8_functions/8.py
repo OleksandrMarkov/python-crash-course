@@ -155,19 +155,66 @@ def make_album2(musician, album, songs_amount = None):
 album4 = make_album2('mus2', 'alb2', 234)
 print('\n', album4)
 
-while True:
-	print("\nPlease tell me musician's name and album's title: ")
-	print("(Enter 'q' to quit)")
+#while True:
+#	print("\nPlease tell me musician's name and album's title: ")
+#	print("(Enter 'q' to quit)")
+#	mus = input("Musician: ")
+#	if mus == 'q':
+#		break
+#	alb = input("Album: ")	
+#	if alb == 'q':
+#		break	
+#	new_album = make_album(mus, alb)
+#	print(new_album)
 
-	mus = input("Musician: ")
+#function_name(list_name) # list will be mutable
+#function_name(list_name[:]) # list will be immutable
+#(precisely speaking, we send list's copy)
 
-	if mus == 'q':
-		break
 
-	alb = input("Album: ")
-	
-	if alb == 'q':
-		break
-	
-	new_album = make_album(mus, alb)
-	print(new_album)
+print("\n# 8.9")
+lst = ['msg1', 'msg2', 'msg3', 'msg4', 'msg5']
+
+def show_messages(lst):
+	for msg in lst:
+		print(msg)
+
+show_messages(lst)
+
+print("\n# 8.10")
+
+def send_messages(lst):
+	sent_messages = []
+	while lst:
+		tmp_msg = lst.pop()
+		print(tmp_msg)
+		sent_messages.append(tmp_msg)
+		
+	print("\nMessages: ")
+	for msg in lst:
+		print(msg)
+
+	print("\nSent messages: ")
+	for msg in sent_messages:
+		print(msg)
+
+send_messages(lst)
+
+
+print("\n# 8.11")
+lst = ['msg1', 'msg2', 'msg3', 'msg4', 'msg5']
+
+def send_messages2(lst):
+	sent_messages = []
+	while lst:
+		tmp_msg = lst.pop()
+		print(tmp_msg)
+		sent_messages.append(tmp_msg)		
+	print("\nSent messages: ")
+	for msg in sent_messages:
+		print(msg)
+
+send_messages2(lst[:])
+print("\nMessages: ")
+for msg in lst:
+	print(msg)
