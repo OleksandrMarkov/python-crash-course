@@ -66,3 +66,108 @@ def describe_city(city, country = 'Denmark'):
 describe_city('Copengagen')
 describe_city('Paris', 'France')
 describe_city(country = 'Ukraine', city = 'ZP')
+
+def return_full_name(first_name, last_name):
+	"""return full_name"""
+	full_name = f"{first_name} {last_name}"
+	return full_name.title()
+
+musician = return_full_name('test', 'testoff')
+print(musician)
+
+def return_full_name2(first_name, last_name, middle_name =''):
+	"""return full_name"""
+	if middle_name:
+		full_name = f"{first_name} {middle_name} {last_name}"
+	else:
+		full_name = f"{first_name} {last_name}"
+	return full_name.title()
+
+return_full_name2('jimmi', 'hendrix')
+return_full_name2('john', 'hooker', 'lee')
+
+def build_person(first_name, last_name):
+	""" this function returns a dictionary"""
+	person = {'first': first_name, 'last': last_name}
+	return person
+
+some_guy = build_person('test', 'testoff')
+print(some_guy)
+
+def build_person2(first_name, last_name, age = None):
+	""" this function returns a dictionary"""
+	person = {'first': first_name, 'last': last_name}
+	if age:
+		person['age'] = age
+	return person
+
+some_guy = build_person2('test', 'testoff', 25)
+print(some_guy)
+
+
+"""meeting with possibility to quit"""
+#while True:
+#	print('\nPlease tell me your name:')
+#	print("(enter 'q' at any time to quit)")
+
+#	f_name = input("First name: ")
+#	if f_name == 'q':
+#		break
+
+#	l_name = input("Last name: ")
+#	if l_name == 'q':
+#		break
+#	full_name = return_full_name(f_name, l_name)	
+#	print(f"Hello, {full_name}")
+
+print('\n#8.6')
+
+def city_country(city, country):
+	result = f"{city}, {country}"
+	return result
+
+c1 = city_country(city = "Kiev", country = "Ukraine")
+c2 = city_country(city = "Minsk", country = "Belarus")
+c3 = city_country(city = "Moscow", country = "Russia")
+
+print(c1, c2, c3, sep = "|")	
+
+print('\n#8.7')
+
+def make_album(musician, album):
+	result = {'musician' : musician, 'album': album}
+	return result
+
+album1 = make_album('tsoy', 'black')
+album2	= make_album('mus1', 'alb1')
+album3	= make_album('mus2', 'alb2')
+
+print(album1)
+print(album2)
+print(album3)
+
+def make_album2(musician, album, songs_amount = None):
+	result = {'musician' : musician, 'album': album}
+	if songs_amount:
+		result['songs_amount'] = songs_amount
+	return result
+
+album4 = make_album2('mus2', 'alb2', 234)
+print('\n', album4)
+
+while True:
+	print("\nPlease tell me musician's name and album's title: ")
+	print("(Enter 'q' to quit)")
+
+	mus = input("Musician: ")
+
+	if mus == 'q':
+		break
+
+	alb = input("Album: ")
+	
+	if alb == 'q':
+		break
+	
+	new_album = make_album(mus, alb)
+	print(new_album)
