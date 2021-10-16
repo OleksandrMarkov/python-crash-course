@@ -262,3 +262,12 @@ favorite_book = 'bible'.title())
 print(my_profile)
 
 print("\n# 8.14")
+
+def make_car(producer, some, **car_info):
+	car_info['producer'] = producer.title()
+	car_info['some'] = some.title()
+	return car_info
+
+car = make_car('subaru', 'outback', color = 'blue',
+tow_package = False, price = 200_000_000, customer = 'X')
+print(car)
