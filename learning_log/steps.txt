@@ -1,0 +1,11 @@
+1. create folder;
+2. create environment: python -m venv ll_env
+3. activate it: ll_env\Scripts\activate
+4. pip install django
+5. start project: django-admin startproject learning_log .
+6. create database: python manage.py migrate
+7. python manage.py runserver
+8. start app: python manage.py startapp learning_logs
+
+TO CONTINUE:
+Activate environment and run server 

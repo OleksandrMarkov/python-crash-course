@@ -1,0 +1,13 @@
+{% extends "learning_logs/base.html" %}
+
+{% block page_header %}
+	<div class="jumbotron">
+		<h1 class="display-3">Слідкуй за навчальним процесом!</h1>
+
+		<p class="lead">Використовуй журнал спостережень, зберігаючи теми, які ти вивчаєш. Якщо ти дізнаєшся щось нове за темою, зроби допис,
+			що підсумовує вивчене...
+		</p>
+
+		<a class = "btn btn-lg btn-primary" href="{% url 'users:register' %}" role = "button">Реєстрація &raquo;</a>
+	</div>
+{% endblock page_header %}	
